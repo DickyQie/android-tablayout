@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        app:tabIndicatorColor="@color/ind_red"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/material_orange"
+        app:tabTextColor="@android:color/black"
+        app:tabIndicatorHeight="5dp"
+        app:tabTextAppearance="@style/TabStyle"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+</LinearLayout>
+    <!--
+
+               app:tabMode="scrollable" 设置tabMode属性为可以滚动
+               tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+               android design library提供的TabLayout控件
+               tabIndicatorColor：菜单下方移动的横线的颜色
+               tabSelectedTextColor ：菜单被选中之后的颜色
+               tabTextColor : 菜单正常的颜色
+               app:tabTextAppearance : 添加样式，这里加了样式主要是为了在文字前面加一个图所用，就是把textAllCaps设置成false
+           -->
