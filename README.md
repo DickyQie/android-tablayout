@@ -10,33 +10,6 @@
 <pre><code class="language-java"> compile 'com.android.support:design:23.2.1'
  compile 'com.android.support:recyclerview-v7:23.1.1'
  compile 'com.android.support:cardview-v7:23.2.1'</code></pre> 
-<p>主布局</p> 
-<pre><code class="language-html">&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"&gt;
 
-    &lt;android.support.design.widget.TabLayout
-        android:id="@+id/tablayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E0E0E0"
-        app:tabIndicatorColor="@color/ind_red"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/material_orange"
-        app:tabTextColor="@android:color/black"
-        app:tabIndicatorHeight="5dp"
-        app:tabTextAppearance="@style/TabStyle"
-        /&gt;
-    &lt;android.support.v4.view.ViewPager
-        android:id="@+id/tab_viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/white" /&gt;
 
-&lt;/LinearLayout&gt;</code></pre> 
-<p>Tablayout控件包含很多属性 例如 tabIndicatorColor：菜单下方移动的横线的颜色&nbsp; 属性很多就不一 一介绍了，代码中有注释。</p> 
 
