@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivityA">
+
+
+
+    <!--
+
+    关闭点击水波纹效果
+    app:tabBackground="@color/transparent"
+    app:tabRippleColor="@color/transparent"
+
+    -->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabIndicatorFullWidth="false"
+        app:tabBackground="@color/transparent"
+        app:tabRippleColor="@color/transparent"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4"
+        ></View>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>
